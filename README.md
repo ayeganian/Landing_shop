@@ -1,2 +1,2 @@
-# Online Shop Step
+# Step-project-online-shop
 
