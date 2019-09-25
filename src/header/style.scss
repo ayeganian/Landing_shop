@@ -1,0 +1,14 @@
+.header {
+  background-color: #363636;
+
+  &__basket {
+    background-color: #d58e32;
+
+    &__user-choice {
+      z-index: 5;
+      background-color: #363636;
+      top: 28%;
+      left: 77%;
+    }
+  }
+}
