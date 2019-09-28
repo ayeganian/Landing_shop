@@ -18,7 +18,7 @@ const path = {
         html: '*.html',
         scss: 'src/**/*.scss',
         js: 'src/**/*.js',
-        img: 'src/img/*.*'
+        img: 'src/img/**/*.*'
     }
 };
 

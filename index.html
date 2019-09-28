@@ -12,39 +12,194 @@
 <body>
 
 <section class="navbar text-white">
-  <div class="container d-flex flex-row justify-content-around align-items-baseline">
-    <!--  <div class="">-->
-    <div class="align-items-center">
+  <div class="container d-flex flex-row justify-content-between align-items-baseline pt-2">
+    <div class="">
       <p class="d-inline-block">USD</p>
       <p class="d-inline-block ml-3">English</p>
-      <a class="d-inline-block ml-3" href="#">Help</a>
+      <a class="navbar__link d-inline-block ml-3" href="#">Help</a>
     </div>
     <div class=" ">
       <i class="mr-1 fas fa-user"></i>
-      <a href="#"> Login</a>
+      <a class="navbar__link" href="#"> Login</a>
       <i class="ml-3 mr-1 fas fa-lock"></i>
-      <a class="" href="#"> Register</a>
+      <a class="navbar__link" href="#"> Register</a>
     </div>
   </div>
 </section>
 
 <section class="header text-white pb-4 pt-4  ">
-  <div class="container d-flex flex-row justify-content-around align-items-center">
+  <div class="container d-flex flex-row justify-content-between align-items-center">
     <div class="">
-      <h6>2300 - 3560 - 222</h6>
+      <h4><i class="mobile-icon pr-1 fas fa-mobile-alt"></i>
+        <small class="font-weight-bold"><a href="#">2300 - 3560 - 222</a></small>
+      </h4>
     </div>
     <div class="">
       <img src="img/logo.png" alt="company-logo">
     </div>
     <div class="">
-      <div class="header__basket p-2 rounded  position-relative">
+      <div class="header__basket p-2 rounded position-relative">
         <i class="fas fa-shopping-basket"></i>
         <div class="header__basket__user-choice w-50 h-50 rounded-circle text-center position-absolute">
-          <p >0</p>
+          <p>0</p>
         </div>
       </div>
     </div>
   </div>
+</section>
+
+<section class="top-menu shadow-sm ">
+  <div class="container pt-3 pb-3 d-flex flex-row justify-content-between align-items-center">
+    <!--  FORM-->
+    <div class="">
+      <form id="custom-search-form" class="form-search form-horizontal pull-right">
+        <div class="input-append span12">
+          <input type="text" class="search-query pt-2 pb-2 pl-2 " placeholder="Search products... ">
+          <button type="submit" class="btn"><i class="fas fa-search "></i></button>
+        </div>
+      </form>
+    </div>
+    <!--hamburger menu  -->
+    <!-- Simulate a smartphone / tablet -->
+    <div class="mobile-container ">
+      <!-- Top Navigation Menu -->
+      <div class="topnav">
+        <!-- Collapse button -->
+        <a href="javascript:void(0);" onclick="myFunction()" class="icon navbar-toggler first-button "
+           data-toggle="collapse" data-target="#navbarSupportedContent20"
+           aria-controls="navbarSupportedContent20" aria-expanded="false" aria-label="Toggle navigation">
+          <div class="animated-icon1 border-0"><span></span><span></span><span></span></div>
+        </a>
+         <div id="myLinks">
+          <a href="#">HOME</a>
+          <a href="#">SLIDER</a>
+          <a href="#">FEATURES</a>
+          <a href="#">STOCKS</a>
+          <a href="#">PRODUCTS</a>
+          <a href="#">GALLERY</a>
+          <a href="#">BLOG</a>
+        </div>
+      </div>
+    </div>
+    <div class="desktop font-weight-bold text-uppercase">
+      <a class="top-menu__tab-item pr-3 pl-3 pb-5 pt-4" href="#">HOME</a>
+      <a class="top-menu__tab-item pr-3 pl-3 pb-5 pt-4" href="#">SLIDER</a>
+      <a class="top-menu__tab-item pr-3 pl-3 pb-5 pt-4" href="#">FEATURES</a>
+      <a class="top-menu__tab-item pr-3 pl-3 pb-5 pt-4" href="#">STOCKS</a>
+      <a class="top-menu__tab-item pr-3 pl-3 pb-5 pt-4" href="#">PRODUCTS</a>
+      <a class="top-menu__tab-item pr-3 pl-3 pb-5 pt-4" href="#">GALLERY</a>
+      <a class="top-menu__tab-item pr-3 pl-3 pb-5 pt-4" href="#">Blog</a>
+    </div>
+  </div>
+</section>
+
+<section class="top-slider">
+  <div class="container card ">
+    <!--    col-sm-10 col-md-10-->
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="100000">
+      <div class="w-100 carousel-inner" role="listbox">
+
+        <div class=" р-100 carousel-item active" style="background-image: url('img/top-slider/1.jpg');">
+          <div class="carousel-item-caption text-uppercase">
+            <h3 class="font-weight-bold ">indoor furniture</h3>
+            <h5 class=" ">save up to 50% of all furniture</h5>
+            <a class="bg-white text-dark rounded p-3" href="#">shop now</a>
+<!--            <div class="row">-->
+<!--              <div class="col-sm-3">-->
+<!--               -->
+<!--              </div>-->
+<!--              <div class="col-sm-9">-->
+<!--                <h3>indoor furniture</h3>-->
+<!--                <small>save up to 50% of all furniture</small>-->
+<!--              </div>-->
+<!--            </div>-->
+          </div>
+        </div>
+        <div class="carousel-item" style="background-image: url('img/top-slider/2.jpg');">
+          <div class="carousel-item-caption">
+            <div class="row">
+              <div class="col-sm-3">
+
+              </div>
+              <div class="col-sm-9">
+                <h3>You will love it.</h3>
+                <small>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida
+                  at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+                </small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!--      <div class="float-right navi">-->
+      <!--        <a class="" href="#carouselExampleControls" role="button" data-slide="prev">-->
+      <!--          <span class="carousel-control-prev-icon ico" aria-hidden="true"></span>-->
+      <!--          <span class="sr-only">Previous</span>-->
+      <!--        </a>-->
+      <!--        <a class="" href="#carouselExampleControls" role="button" data-slide="next">-->
+      <!--          <span class="carousel-control-next-icon ico" aria-hidden="true"></span>-->
+      <!--          <span class="sr-only">Next</span>-->
+      <!--        </a>-->
+      <!--      </div>-->
+      <div class="row navi">
+        <div class="col-6 "><a class="p-3" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon ico" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a></div>
+        <div class="col-6 "><a class="p-3" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon ico" aria-hidden="true"></span>
+          <span class="sr-only">Next</span></a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="our-features">
+  <div class="our-features__content container text-uppercase text-center pt-3 pb-3">
+    <div class="row">
+      <div class="col-sm-12 col-md-6 col-lg-3 pt-5">
+        <div class=" our-features__item position-relative mx-auto  d-flex flex-column justify-content-end">
+          <div class="our-features__item__circle rounded-circle p-3 position-absolute">
+            <i class="fas fa-truck-moving"></i>
+          </div>
+          <p class="font-weight-bold">Free Shipping</p>
+          <p> all order</p>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-3 pt-5">
+        <div class=" our-features__item position-relative mx-auto  d-flex flex-column justify-content-end">
+          <div class="our-features__item__circle rounded-circle p-3 position-absolute">
+            <i class="fas fa-headphones"></i>
+          </div>
+          <p class="font-weight-bold">24/7 customer</p>
+          <p> support</p>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-3 pt-5">
+        <div class=" our-features__item position-relative mx-auto  d-flex flex-column justify-content-end">
+          <div class="our-features__item__circle rounded-circle p-3 position-absolute">
+            <i class="fas fa-reply-all"></i>
+          </div>
+          <p class="font-weight-bold">money back</p>
+          <p>guarantee</p>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-3 pt-5">
+        <div class="our-features__item position-relative  mx-auto d-flex flex-column justify-content-end">
+          <div class="our-features__item__circle rounded-circle p-3 position-absolute">
+            <i class="fas fa-bullhorn"></i>
+          </div>
+          <p class="font-weight-bold">MEMBER DISCOUNT</p>
+          <p>first order</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="furniture-gallery">
+
 </section>
 
 <!-- jQuery library -->
@@ -57,5 +212,6 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
 <script src="js/script.js"></script>
+
 </body>
 </html>

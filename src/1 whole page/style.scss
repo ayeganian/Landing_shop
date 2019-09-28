@@ -1,0 +1,27 @@
+//variables
+$MainColor: #d58e32;
+$DarkColor: #363636;
+
+
+//$titlesFSZ: 19px;
+//
+//
+//// _________category photos with arrows__________________
+//
+//@mixin dishImg($type) {
+
+a {
+  color: white;
+}
+
+a:hover {
+  text-decoration: none;
+  color: white;
+  border-bottom: 1px solid white;
+}
+
+.container {
+  width: 1138px;
+  margin: 0 auto;
+}
+
