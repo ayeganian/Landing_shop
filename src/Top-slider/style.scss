@@ -1,50 +1,30 @@
-.card {
+.top-slider__wrapper {
   margin: 0 auto;
   border: none;
 }
 
-.card .carousel-item {
-    height: 450px;
-    background-size: cover;
+.top-slider__wrapper .carousel-item {
+  height: 677px;
+  background-size: cover;
 
+  &__btn:hover {
+    border: none;
   }
 
-
-
-
-
-.card .carousel-caption {
-  //padding: 0;
-  //right: 0;
-  //left: 0;
-  //color: #3d3d3d;
+  &__caption {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
 }
-
-.card .carousel-caption h3 {
-  //color: #3d3d3d;
-}
-
-.card .carousel-caption p {
-  //line-height: 30px;
-}
-
-//.card .carousel-caption .col-sm-3 {
-//  display: flex;
-//  align-items: center;
-//}
-//
-//.card .carousel-caption .col-sm-9 {
-//  text-align: left;
-//}
 
 .navi a {
-  text-decoration: none;
+  border: none;
 }
 
-a > .ico {
+.carousel-arrow {
   background-color: #2a2a2a;
 }
 
-a:hover > .ico {
+.carousel-arrow:hover {
   background-color: #d58e32;
 }
+
