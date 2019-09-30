@@ -1,10 +1,4 @@
-//variables
-//$MainColor: #d58e32;
-//$DarkColor: #363636;
-
-a {
-  color: white;
-}
+@import "custom-bootstrap";
 
 a:hover {
   text-decoration: none;
@@ -20,12 +14,14 @@ a:hover {
 @media (max-width: 1200px) and (min-width: 768px) {
   .container {
     width: 750px;
+    margin: 0 auto;
   }
 }
 
 @media (min-width: 1201px) {
   .container {
     width: 1138px;
+    margin: 0 auto;
   }
 }
 

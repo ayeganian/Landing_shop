@@ -9,8 +9,6 @@ function myFunction() {
     }
 }
 
-
-
 $(document).ready(function () {
 
     $('.first-button').on('click', function () {

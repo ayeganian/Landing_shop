@@ -24,14 +24,9 @@
     }
   }
 
-
   //tabs styles
-
-
   &__tabs a {
     color: #000;
-
-
   }
 
   //advertising banner
@@ -39,18 +34,11 @@
     background-color: #e8edf7;
 
     &__price {
-      color: #79ae30;
       font-size: 2em;
     }
 
-    &__name {
-      color: #d58e32;
-    }
-
     &__btn {
-      background-color: #79ae30;
-      display: inline-block;
-
+      width: 26%;
 
       &:hover {
         border: none;
@@ -59,33 +47,30 @@
   }
 }
 
+.nav-tabs .nav-link:hover {
+  background-color: #f4f5f7;
+}
+
 .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
   background-color: #f4f5f7;
+  color: #d58e32;
+  border-bottom: none;
+  border-top: 3px solid #d58e32;
+}
+
+.nav-tabs {
   border-bottom: none;
 }
-.nav-tabs{
-  border-bottom: none;
-}
-  //.nav-item .active{
-//  background-color: #f4f5f7;
-//  color: #d58e32;
-//  border-top: 3px solid #d58e32;
-//}
-//.tab-content .active{
-//  background-color: #f4f5f7;
-//}
+
 //_________________carousel____________
 
 
 //style for every card
 
-
 .card {
   background-color: #f4f5f7;
-
-  width: 451px;
+  //width: 451px;
   height: 454px;
-
 
   a {
     color: #2a2a2a;
@@ -134,8 +119,6 @@
     border-bottom: 40px solid #2a2a2a;
     border-left: 40px solid transparent;
   }
-
-
 }
 
 @media (max-width: 768px) {
@@ -144,11 +127,10 @@
     height: 105px;
     width: 105px;
     background-color: rgba(0, 0, 0, 0.5);
-
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .card-price {
     left: 37%;
     bottom: 80%;
@@ -159,24 +141,29 @@
 }
 
 //carousel
+
 .carousel-item img {
   //max-width: 330px;
   //max-height: 380px;
 }
 
-.carousel-indicators {
+.indicators-wrap {
+  height: 88px;
+  width: 500px;
+}
 
-  bottom: -17%;
-  left: 0;
+.carousel-indicators {
+  width: 500px;
+  bottom: 0;
+  left: -15%;
+
 }
 
 .carousel-indicators-item {
-
   background-color: #d3d3d3;
 }
 
 .carousel-indicators-item img {
-
   width: 70px;
   height: 70px;
 }
@@ -190,19 +177,12 @@
   background-color: #2a2a2a;
   height: 70px;
   width: 33px;
-  top: 8px;
-}
+  position: static;
+  margin-top: 20%;
 
-.carousel-control-next, .carousel-control-prev {
-
-  //left: 2px;
-}
-
-.carousel-control-next, .carousel-control-prev {
-  //top: 8px;
-  //right: 2px;
 }
 
 .fixed-container-tabs {
   max-width: 555px;
 }
+

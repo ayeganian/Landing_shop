@@ -85,9 +85,13 @@ $DarkColor: #363636;
   //color: black;
 }
 
-.topnav:hover {
-  background-color: $DarkColor;
-  //color: black;
+.topnav {
+  //background-color: $DarkColor;
+  position: absolute;
+  top: 18%;
+  right: 0;
+  z-index: 10;
+  text-align: right;
 }
 
 .active {
@@ -99,6 +103,7 @@ $DarkColor: #363636;
 /* hamburger button */
 
 .animated-icon1 {
+
 
   width: 30px;
   height: 20px;
