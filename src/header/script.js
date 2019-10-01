@@ -1,17 +1,17 @@
-$('#myModal').modal({
-    backdrop: true
-});
+// $('#myModal').modal({
+//     backdrop: true
+// });
 
 function validform() {
 
     var a = document.forms["my-form"]["full-name"].value;
     var b = document.forms["my-form"]["email-address"].value;
 
-    if (a==null || a=="")
+    if (a==null || a==" ")
     {
         alert("Please Enter Your Full Name");
         return false;
-    }else if (b==null || b=="")
+    }else if (b==null || b==" ")
     {
         alert("Please Enter Your Email Address");
         return false;
