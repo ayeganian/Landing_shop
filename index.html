@@ -50,7 +50,7 @@
             </div>
             <div class="form-group row">
               <div class="col-6">
-                <a href="#" class="btn btn-dark opacity-1 pt-2 pb-2 pl-3 pr-3  font-weight-bold text-uppercase">
+                <a href="#" class="modal-btn btn btn-dark opacity-1 pt-2 pb-2 pl-3 pr-3  font-weight-bold text-uppercase">
                   <small>login</small>
                 </a>
               </div>
@@ -89,7 +89,7 @@
             </div>
             <div class="form-group row">
               <div class="col-6">
-                <a href="#" class="btn btn-dark opacity-1 pt-2 pb-2 pl-3 pr-3  font-weight-bold text-uppercase ">
+                <a href="#" class="modal-btn btn btn-dark opacity-1 pt-2 pb-2 pl-3 pr-3  font-weight-bold text-uppercase ">
                   <small>Register</small>
                 </a>
               </div>
@@ -123,7 +123,7 @@
 </header>
 
 <section class="top-menu shadow-sm ">
-  <div class="container position-relative pt-3 pb-3 d-flex flex-row justify-content-between align-items-center">
+  <div class="container position-relative pt-sm-3 pt-md-3 pt-xl-0 pb-sm-3 pb-md-3 pb-xl-0 d-flex flex-row justify-content-between align-items-center">
     <!--  FORM-->
     <div class="">
       <form id="custom-search-form" class="form-search form-horizontal pull-right">
@@ -139,36 +139,36 @@
       <!-- Top Navigation Menu -->
       <div class="topnav">
         <!-- Collapse button -->
-        <a href="javascript:void(0);" onclick="myFunction()" class="icon navbar-toggler first-button "
+        <a href="javascript:void(0);" onclick="myFunction()" class="icon navbar-toggler first-button"
            data-toggle="collapse" data-target="#navbarSupportedContent20"
            aria-controls="navbarSupportedContent20" aria-expanded="false" aria-label="Toggle navigation">
           <div class="animated-icon1 border-0"><span></span><span></span><span></span></div>
         </a>
-        <div id="myLinks">
-          <a href="#">HOME</a>
-          <a href="#">SLIDER</a>
-          <a href="#">FEATURES</a>
-          <a href="#">STOCKS</a>
-          <a href="#">PRODUCTS</a>
-          <a href="#">GALLERY</a>
-          <a href="#">BLOG</a>
-        </div>
-      </div>
+<!--        <div id="myLinks">-->
+<!--          <a href="#">HOME</a>-->
+<!--          <a href="#">SLIDER</a>-->
+<!--          <a href="#">FEATURES</a>-->
+<!--          <a href="#">STOCKS</a>-->
+<!--          <a href="#">PRODUCTS</a>-->
+<!--          <a href="#">GALLERY</a>-->
+<!--          <a href="#">BLOG</a>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+    <div id="myLinks" class="desktop font-weight-bold text-uppercase">
+      <a class="top-menu__tab-item pr-lg-3 pl-lg-3 pb-lg-5 pt-lg-4" href="#navbar">HOME</a>
+      <a class="top-menu__tab-item pr-lg-3 pl-lg-3 pb-lg-5 pt-lg-4" href="#top-slider">SLIDER</a>
+      <a class="top-menu__tab-item pr-lg-3 pl-lg-3 pb-lg-5 pt-lg-4" href="#features">FEATURES</a>
+      <a class="top-menu__tab-item pr-lg-3 pl-lg-3 pb-lg-5 pt-lg-4" href="#stocks">STOCKS</a>
+      <a class="top-menu__tab-item pr-lg-3 pl-lg-3 pb-lg-5 pt-lg-4" href="#furniture">PRODUCTS</a>
+      <a class="top-menu__tab-item pr-lg-3 pl-lg-3 pb-lg-5 pt-lg-4" href="#furniture-gallery">GALLERY</a>
+      <a class="top-menu__tab-item pr-lg-3 pl-lg-3 pb-lg-5 pt-lg-4" href="#blog">Blog</a>
     </div>
-    <div id="yakLinks" class="desktop font-weight-bold text-uppercase">
-      <a class="top-menu__tab-item pr-3 pl-3 pb-5 pt-4" href="#navbar">HOME</a>
-      <a class="top-menu__tab-item pr-3 pl-3 pb-5 pt-4" href="#top-slider">SLIDER</a>
-      <a class="top-menu__tab-item pr-3 pl-3 pb-5 pt-4" href="#features">FEATURES</a>
-      <a class="top-menu__tab-item pr-3 pl-3 pb-5 pt-4" href="#stocks">STOCKS</a>
-      <a class="top-menu__tab-item pr-3 pl-3 pb-5 pt-4" href="#furniture">PRODUCTS</a>
-      <a class="top-menu__tab-item pr-3 pl-3 pb-5 pt-4" href="#furniture-gallery">GALLERY</a>
-      <a class="top-menu__tab-item pr-3 pl-3 pb-5 pt-4" href="#blog">Blog</a>
-    </div>
-  </div>
+      </div></div>
 </section>
 
 <section id="top-slider" class="top-slider">
-  <div class="container top-slider__wrapper ">
+  <div class="container top-slider__wrapper p-0 ">
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="100000">
       <div class="carousel-inner" role="listbox">
         <div class="carousel-item active" style="background-image: url('img/top-slider/1.jpg');">
@@ -209,7 +209,7 @@
 <section id="features" class="our-features">
   <div class="our-features__content container text-uppercase text-center pt-3 pb-3">
     <div class="row">
-      <div class="col-sm-12 col-md-6 col-lg-3 pt-5">
+      <div class="col-sm-12 col-md-6 col-lg-6 col-xl-3 pt-5">
         <div class=" our-features__item position-relative mx-auto  d-flex flex-column justify-content-end">
           <div class="our-features__item__circle rounded-circle p-3 position-absolute">
             <i class="fas fa-truck-moving"></i>
@@ -218,7 +218,7 @@
           <p> all order</p>
         </div>
       </div>
-      <div class="col-sm-12 col-md-6 col-lg-3 pt-5">
+      <div class="col-sm-12 col-md-6 col-lg-6 col-xl-3 pt-5">
         <div class=" our-features__item position-relative mx-auto  d-flex flex-column justify-content-end">
           <div class="our-features__item__circle rounded-circle p-3 position-absolute">
             <i class="fas fa-headphones"></i>
@@ -227,7 +227,7 @@
           <p> support</p>
         </div>
       </div>
-      <div class="col-sm-12 col-md-6 col-lg-3 pt-5">
+      <div class="col-sm-12 col-md-6 col-lg-6 col-xl-3 pt-5">
         <div class=" our-features__item position-relative mx-auto  d-flex flex-column justify-content-end">
           <div class="our-features__item__circle rounded-circle p-3 position-absolute">
             <i class="fas fa-reply-all"></i>
@@ -236,7 +236,7 @@
           <p>guarantee</p>
         </div>
       </div>
-      <div class="col-sm-12 col-md-6 col-lg-3 pt-5">
+      <div class="col-sm-12 col-md-6 col-lg-6 col-xl-3 pt-5">
         <div class="our-features__item position-relative  mx-auto d-flex flex-column justify-content-end">
           <div class="our-features__item__circle rounded-circle p-3 position-absolute">
             <i class="fas fa-bullhorn"></i>
@@ -260,13 +260,13 @@
     <div class="row">
 
       <!--      col-md-12-->
-      <div class="col-sm-12 col-md-12 col-lg-6">
-        <div class="fixed-container-tabs">
+      <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6">
+        <div class="fixed-container-tabs mx-auto">
 
           <div class="furniture-gallery__name text-uppercase pb-1 row">
             <h6>furniture gallery</h6>
           </div>
-          <div class="row tabs mt-4">
+          <div class="row tabs mt-4 mx-auto">
             <!--__________________TABS____________-->
             <div class=" furniture-gallery__tabs ">
               <ul class="nav nav-tabs text-uppercase font-weight-bold " role="tablist">
@@ -1301,8 +1301,7 @@
           </div>
         </div>
       </div>
-      <div
-          class="furniture-gallery__banner d-sm-none d-md-none d-lg-flex col-lg-6 flex-column justify-content-around text-uppercase font-weight-bold p-5">
+      <div class="furniture-gallery__banner d-sm-none d-md-none d-lg-none d-xl-flex col-lg-12 col-xl-6 flex-column justify-content-around text-uppercase font-weight-bold p-5">
         <p>FROM <span class="furniture-gallery__banner__price text-success">$50.80</span></p>
         <h2 class="furniture-gallery__banner__name text-warning">Bedroom Bed</h2>
         <a class="furniture-gallery__banner__btn mt-3 mb-3 bg-success  rounded p-3  " href="#">shop now</a>

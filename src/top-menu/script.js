@@ -1,14 +1,15 @@
 $(document).ready(function () {
-    $("#yakLinks").on("click", "a", function (event) {
+    $("#myLinks").on("click", "a", function (event) {
         event.preventDefault();
-        var id = $(this).attr('href'),
-            top = $(id).offset().top;
-        $('body,html').animate({scrollTop: top}, 1500);
+        // var id = $(this).attr('href'),
+        //     top = $(id).offset().top;
+        // $('body,html').animate({scrollTop: top}, 5000);
+
     });
 });
 // hamburger menu
 function myFunction() {
-    var x = document.getElementById("myLinks");
+    let x = document.getElementById("myLinks");
     if (x.style.display === "block") {
         x.style.display = "none";
     } else {
@@ -20,5 +21,6 @@ $(document).ready(function () {
     $('.first-button').on('click', function () {
 
         $('.animated-icon1').toggleClass('open');
+        // $('.animated-icon1').toggleClass('btnColorDark');
     });
 });

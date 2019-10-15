@@ -6,6 +6,7 @@
 //MODALS
 @mixin Modals($type) {
   background-color: white;
+
   @if ($type == register) {
     height: 398px;
     width: 419px;
@@ -45,7 +46,11 @@
 .modal-close-btn:hover {
   border: none;
   color: white;
-  background-color: #171717;
+  background-color: #d58e32;
+  cursor: pointer;
+}
+.modal-btn{
+  cursor: pointer;
 }
 
 @media (min-width: 1201px) {

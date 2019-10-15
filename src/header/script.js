@@ -1,6 +1,3 @@
-// $('#myModal').modal({
-//     backdrop: true
-// });
 
 function validform() {
 

@@ -1,31 +1,11 @@
 $DarkColor: #363636;
 
 
-
-.desktop{
+.desktop {
   display: none;
 }
+
 //form
-
-#custom-search-form {
-  //margin:0;
-  //margin-top: 5px;
-  //padding: 0;
-}
-
-//#custom-search-form .search-query {
-//  padding-right: 3px;
-//  padding-right: 4px \9;
-//  padding-left: 3px;
-//  padding-left: 4px \9;
-//  /* IE7-8 doesn't have border-radius, so don't indent the padding */
-//
-//  margin-bottom: 0;
-//  -webkit-border-radius: 3px;
-//  -moz-border-radius: 3px;
-//  border-radius: 3px;
-//}
-
 #custom-search-form button {
   border: 0;
   background: none;
@@ -48,63 +28,20 @@ $DarkColor: #363636;
 //hamburger menu
 
 .mobile-container {
-  //max-width: 480px;
-  margin: auto;
-
-
   color: #e3e3e3;
-
 }
 
 .topnav {
   overflow: hidden;
-  //background-color: #333;
-  //position: relative;
-}
-
-.topnav #myLinks {
-  display: none;
-}
-
-.topnav a {
-  color: black;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  display: block;
-}
-
-.topnav a.icon {
-
-  display: block;
-
-}
-
-.topnav a:hover {
-  //background-color: #ddd;
-  //color: black;
-}
-
-.topnav {
-  //background-color: $DarkColor;
-  position: absolute;
-  top: 18%;
-  right: 0;
-  z-index: 10;
-  text-align: right;
 }
 
 .active {
-  //background-color: #4CAF50;
   color: white;
 }
-
 
 /* hamburger button */
 
 .animated-icon1 {
-
-
   width: 30px;
   height: 20px;
   position: relative;
@@ -176,24 +113,72 @@ $DarkColor: #363636;
 }
 
 
-@media (max-width: 768px) and (min-width: 481px) {
+.topnav a.icon {
+
+  display: block;
+
+}
+
+.topnav a:hover {
+  //background-color: #ddd;
+  //color: black;
+}
+
+.topnav a {
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+@media (min-width: 769px) {
+  .topnav #myLinks {
+    display: block;
+  }
+
+
+}
+
+@media (max-width: 1200px) {
+  .topnav #myLinks {
+    display: none;
+  }
+  .topnav {
+    background-color: $DarkColor;
+    position: absolute;
+    top: 18%;
+    right: 0;
+    z-index: 10;
+    text-align: right;
+  }
 
 }
 
 @media (min-width: 1200px) {
+  .topnav #myLinks {
+    display: flex;
+    justify-content: space-around;
+  }
+  .topnav a.icon {
+    position: absolute;
+  }
+
+
+  .first-button {
+    display: none;
+    height: 0;
+  }
   .animated-icon1 {
     display: none;
   }
-  .desktop{
-    display: block;
-    
-  }
-  .desktop>a{
+
+  #myLinks > a {
     color: #000;
     padding-left: 20px;
   }
-  .top-menu__tab-item:hover{
+  .top-menu__tab-item:hover {
     background-color: #d58e32;
-    border-top: 4px solid #2a2a2a;
+    box-shadow: 0 4px 0 0 #2a2a2a inset;
   }
 }
