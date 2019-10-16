@@ -1,0 +1,28 @@
+.header {
+  background-color: #363636;
+
+  &__basket {
+    background-color: #d58e32;
+    cursor: pointer;
+    //background-color: $MainColor;
+
+    &__user-choice {
+      z-index: 5;
+      background-color: #363636;
+      top: 28%;
+      left: 77%;
+    }
+  }
+}
+
+.mobile-icon {
+  display: none;
+  color: #d58e32;
+}
+
+@media (min-width: 768px) {
+  .mobile-icon {
+    display: inline-block;
+  }
+}
+

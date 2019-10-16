@@ -1,0 +1,63 @@
+.navbar {
+  background-color: #434343;
+  height: 54px;
+}
+
+//MODALS
+@mixin Modals($type) {
+  background-color: white;
+
+  @if ($type == register) {
+    height: 398px;
+    width: 419px;
+  } @else if ($type == login) {
+    height: 330px;
+    width: 421px;
+  } @else if ($type == register-big) {
+    height: 398px;
+    width: 456px;
+  } @else if ($type == login-big) {
+    height: 330px;
+    width: 456px;
+  }
+}
+
+.modal-content-register {
+  @include Modals(register);
+}
+
+.modal-content-login {
+  @include Modals(login);
+}
+
+.modal-close-btn {
+  height: 41px;
+  width: 37px;
+  background-color: #434343;
+  color: white;
+  float: right;
+  opacity: 1;
+  line-height: .2rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.modal-close-btn:hover {
+  border: none;
+  color: white;
+  background-color: #d58e32;
+  cursor: pointer;
+}
+.modal-btn{
+  cursor: pointer;
+}
+
+@media (min-width: 1201px) {
+  .modal-content-register {
+    @include Modals(register-big);
+  }
+  .modal-content-login {
+    @include Modals(login-big);
+  }
+}

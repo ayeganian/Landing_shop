@@ -1,0 +1,30 @@
+@import "custom-bootstrap";
+
+a:hover {
+  text-decoration: none;
+  color: white;
+  border-bottom: 1px solid white;
+}
+
+.container {
+  width: 450px;
+  margin: 0 auto;
+}
+
+
+@media (max-width: 1200px) and (min-width: 768px) {
+  .container {
+    width: 750px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1201px) {
+  .container {
+    width: 1138px;
+    margin: 0 auto;
+  }
+}
+
+
+

@@ -1,0 +1,30 @@
+.top-slider__wrapper {
+  margin: 0 auto;
+  border: none;
+}
+
+.top-slider__wrapper .carousel-item {
+  height: 677px;
+  background-size: cover;
+
+  &__btn:hover {
+    border: none;
+  }
+
+  &__caption {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}
+
+.navi a {
+  border: none;
+}
+
+.carousel-arrow {
+  background-color: #2a2a2a;
+}
+
+.carousel-arrow:hover {
+  background-color: #d58e32;
+}
+

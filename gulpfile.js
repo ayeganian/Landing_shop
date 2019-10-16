@@ -5,6 +5,7 @@ const gulp = require('gulp'),
     autoprefixer = require('gulp-autoprefixer'),
     browserSync = require('browser-sync').create(),
     clean = require('gulp-clean');
+
 const path = {
     dist: {
         html: 'dist',
@@ -15,9 +16,9 @@ const path = {
     },
     src : {
         html: '*.html',
-        scss: 'src/scss/*.scss',
-        js: 'src/js/*.js',
-        img: 'src/img/*.*'
+        scss: 'src/**/*.scss',
+        js: 'src/**/*.js',
+        img: 'src/img/**/*.*'
     }
 };
 
@@ -40,17 +41,12 @@ const scssBuild = () => (
         .pipe(gulp.dest(path.dist.css))
         .pipe(browserSync.stream())
 );
-
 const jsBuild = () => (
     gulp.src(path.src.js)
         .pipe(concat('script.js'))
-        // .pipe(babel({
-        //     presets: ['@babel/env']
-        // }))
         .pipe(gulp.dest(path.dist.js))
         .pipe(browserSync.stream())
 );
-
 const cleanDist = () => (
     gulp.src(path.dist.self, {allowEmpty: true})
         .pipe(clean())
@@ -58,14 +54,11 @@ const cleanDist = () => (
 
 /************ W A T C H E R **************/
 const watcher = () => {
-
     browserSync.init({
-
         server: {
-            baseDir: "./dist",
+            baseDir: "./dist"
         }
     });
-
     gulp.watch(path.src.html, htmlBuild).on('change', browserSync.reload);
     gulp.watch(path.src.scss, scssBuild).on('change', browserSync.reload);
     gulp.watch(path.src.js, jsBuild).on('change', browserSync.reload);
@@ -73,7 +66,7 @@ const watcher = () => {
 };
 
 /************ T A S K S **************/
-//  gulp.task('html', htmlBuild);
+// gulp.task('html', htmlBuild);
 // gulp.task('scss', scssBuild);
 // gulp.task('js', jsBuild);
 
@@ -82,3 +75,5 @@ gulp.task('default', gulp.series(
     gulp.parallel( scssBuild, htmlBuild, imgBuild, jsBuild),
     watcher
 ));
+
+
